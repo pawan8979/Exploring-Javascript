@@ -1,4 +1,5 @@
 //variable "declaration" are "hoisted" towards "top" of their scope
+//Js interpreter reads function definition before executing code
 //only with var
 
 value = 10;
@@ -14,7 +15,13 @@ function test() {
   console.log("Hoisting is fun");
 }
 
-//Arrow function do not have hoisting
+//function expression do not support hoisting
+test();
+var test = function(){
+  console.log("Hoisting is fun");
+};
+
+//Arrow function do not support hoisting
 
 test();
 let test = () => {

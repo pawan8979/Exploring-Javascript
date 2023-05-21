@@ -15,7 +15,7 @@ let transformer = function (str, fun) {
 console.log(transformer("pawan", upperCase));
 console.log(transformer("Pawan", lowerCase));
 
-// Function returning another function(HOF)/Returning Functions
+// Function returning another function(HOF)/Returning Functions/closure
 
 let compliment = function (msg) {
   return function (name) {
